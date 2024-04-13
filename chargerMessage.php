@@ -11,8 +11,3 @@ while ($message) {?>
     </div>
     <?php }
 ?>
-
-
-
-
-<h1>Bonjour !</h1>
