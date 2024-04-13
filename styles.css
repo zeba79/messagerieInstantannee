@@ -3,4 +3,21 @@
     flex-wrap: wrap;
     margin: 5px;
     gap: 10px;
+    visibility:hidden;
+    height: 1px;
+}
+
+
+.message{
+    background-color: beige;
+   padding: 5px;
+   border-radius: 5px;
+   border:1px solid blue;
+   width: 20rem;
+ 
+
+}
+
+.cacherCommentaires{
+    visibility:hidden;
 }
