@@ -41,10 +41,14 @@ if (isset($_POST['envoyer'])) {
         <div class="container">
   <div class="row">
     <div class="col">
-        <input type="submit" name="afficherCommentaires" id="afficherCommentaires"
-        value="Afficher les commentaires"  class=" p-3 mb-2 bg-primary text-white  rounded text-center">
-        <input type="submit" name="cacherCommentaires" id="cacherCommentaires"
-        value="Cacher les commentaires"  class=" cacherCommentaires p-3 mb-2 bg-primary text-white  rounded text-center">
+        <button type="button" name="afficherCommentaires" id="afficherCommentaires"
+        class=" p-3 mb-2 bg-primary text-white  rounded text-center">
+            Afficher les commentaires
+        </button>
+        <button type="button" name="cacherCommentaires" id="cacherCommentaires"
+        class=" cacherCommentaires p-3 mb-2 bg-primary text-white  rounded text-center">
+            Cacher les commentaires
+        </button>
       </div>
   </div>
 </div>
@@ -53,15 +57,17 @@ if (isset($_POST['envoyer'])) {
 </div>
 </div>
 </form>
-    <section class="messages" id="messages">
+    <div class="container messages" id="messages">
+        <div class="row">
+
+
     <?php
 require_once './chargerMessage.php';
 ?>
+        </div>
+    </div>
 
-
-    </section>
-
-    <div class="container">
+    <div class="container d-flex flex-row">
     <a href="index.php"  class=" nav-link p-3 mb-2 mt-3 bg-primary text-white shadow-lg p-3 mb-5 rounded text-center">
         Retour à la page d'accueil
     </a>

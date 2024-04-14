@@ -1,0 +1,27 @@
+body{
+    background-color: #E7EEEC;
+}
+
+.messages{
+    padding: 2%;
+    visibility:hidden;
+    border-radius: 10px;
+    height: 1px;
+    background-color:#FFFF;
+}
+
+
+.message{
+   background-color: #E7EEEC;
+   padding: 2%px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   border:1px solid black;
+   width: 20rem;
+ 
+
+}
+
+.cacherCommentaires{
+    visibility:hidden;
+}
