@@ -8,11 +8,7 @@ if (isset($_POST['envoyer'])) {
         $pseudo = htmlentities($_POST['pseudo']);
         $avis = nl2br(htmlentities($_POST['avis']));
 
-        $sql = 'INSERT INTO commentaires(pseudo, avis) VALUES(:pseudo, :avis)';
-        $stmt = $pdo->prepare($sql);
-        $stmt->bindValue(":pseudo", $pseudo);
-        $stmt->bindValue(":avis", $avis);
-        $stmt->execute();
+        insertCommenatires($pdo, $pseudo, $avis);
 
         echo 'Commentaire posté';
 
@@ -63,7 +59,8 @@ if (isset($_POST['envoyer'])) {
 
 
     <?php
-require_once './chargerMessage.php';
+$messages = getCommentaires($pdo);
+require_once './templates/chargerMessage.php';
 ?>
         </div>
     </div>
