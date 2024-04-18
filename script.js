@@ -3,7 +3,6 @@ const messages = document.getElementById('messages');
 console.log(messages);
 
 // Afficher les commentaires
-
 const afficherCommentaire = document.getElementById('afficherCommentaires');
 console.log(afficherCommentaire);
 afficherCommentaire.addEventListener("click", afficherCommentaires)
@@ -13,8 +12,6 @@ function afficherCommentaires(){
     cacherCommentaire.setAttribute("style","visibility:visible;");
     afficherCommentaire.setAttribute("style","visibility:hidden;");
 }
-
-
 // Cacher les commentaires
 const cacherCommentaire = document.getElementById('cacherCommentaires');
 console.log(cacherCommentaire);

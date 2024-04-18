@@ -1,11 +1,10 @@
 <?php
 require_once './lib/pdo.php';
+require_once './lib/tools.php';
 
-$sql = 'SELECT * FROM commentaires ORDER BY id DESC';
-$chargerMessage = $pdo->prepare($sql);
-$chargerMessage->execute();
+$messages = getCommentaires($pdo);
 
-while ($message = $chargerMessage->fetch(PDO::FETCH_ASSOC)) {?>
+foreach ($messages as $message) {?>
 
     <div class="container message">
         <h2><?=$message['pseudo'];?></h2>

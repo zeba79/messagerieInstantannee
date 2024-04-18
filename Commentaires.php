@@ -1,5 +1,6 @@
 <?php
 require_once './lib/pdo.php';
+require_once './lib/tools.php';
 require_once './templates/header.php';
 
 if (isset($_POST['envoyer'])) {
